@@ -155,11 +155,15 @@ Here we see the transaction type and appearance of the cat.<br>
 <li>type 3: The crossing</li>
 <li>type 4: Selling a cat</li>
 <li>type 5: Buying a cat</li>
-<li>type 6: Deleting</li>
+<li>type 6: Remove from sale</li>
+<li>type 7: Deleting</li>
  </ul>
 <li>img - Serial number of the cat's avatar.</li>
   To get an image of the cat's avatar, follow the link:<br> mintercat.com/img/Cat <b><i>serial number of the cat's avatar</i></b>  .webp<br>
 <li>hash - Hash transactions.</li>
+Types "mom" and "dad" may appear in the crossing transaction
+<li>mom - Mom's hash transactions.</li>
+<li>dad - Dad's hash transactions.</li>
 </ul>
 
 ## GitHub Files
