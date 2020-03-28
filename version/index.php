@@ -8,7 +8,7 @@ $github = array(
 "MinterCat/MinterCat.com" => "v0.1.0-Beta3",
 "MinterCat/API" => "v0.1.0",
 "MinterTeam/minter-go-node" => "v1.1.5",
-"MinterTeam/minter-php-sdk" => "v2.2.0"
+"MinterTeam/minter-php-sdk" => "v2.3.0"
 );
 
 $array = array(
