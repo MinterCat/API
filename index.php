@@ -49,15 +49,13 @@ $countapi = (count($payloadapi) - 1);
 	
 $prise = 50; //MINTERCAT PRICE
 
-$result = $db_cats->query('SELECT COUNT(*) FROM "table"');
-$data = $result->fetchArray(1);	
+$data = $db_cats->query('SELECT COUNT(*) FROM "table"')->fetchArray(1);	
 $count = $data['COUNT(*)'];
 
 for ($i = 0; $i <= $countapi; $i++)
 {
 	$img = $payloadapi[$i]['img'];
-	$result = $db_cats->query('SELECT COUNT(*) FROM "table" WHERE img = "' . $img . '"');
-	$data = $result->fetchArray(1);
+	$data = $db_cats->query('SELECT COUNT(*) FROM "table" WHERE img = "' . $img . '"')->fetchArray(1);
 	$q2 = $data['COUNT(*)'];
 	
 		//=====================================
