@@ -1,15 +1,21 @@
 <?php
-header('Access-Control-Allow-Origin: *');
-header('Content-type: application/json; charset=utf-8');
+declare(strict_types=1);
+require_once('../../config/minterapi/vendor/autoload.php');
+use Minter\MinterAPI;
+use Minter\SDK\MinterTx;
 
 include(explode('public_html', $_SERVER['DOCUMENT_ROOT'])[0] . 'config/config.php');
 include(explode('public_html', $_SERVER['DOCUMENT_ROOT'])[0] . 'public_html/function.php');
 
-$json_api = JSON($coin_api);
-$estimate = $json_api->result->will_get/10 ** 18;
+$api = new MinterAPI($api3);
 
-$json_api = JSON('https://api.mscan.dev/'.$mscan.'/node/coin_info?symbol=MINTERCAT');
-$symbol = $json_api->result;
+$estimateCoinSell = $api->estimateCoinSell('MINTERCAT', '1000000000000000000', 'BIP', null);
+$estimate = $estimateCoinSell->result->will_get/10 ** 18;
 
-$array = array("estimate" => $estimate, "symbol" => $symbol);
+$getCoinInfo = $api->getCoinInfo('MINTERCAT')->result;
+
+header('Access-Control-Allow-Origin: *');
+header('Content-type: application/json; charset=utf-8');
+
+$array = array("estimate" => $estimate, "symbol" => $getCoinInfo);
 echo json_encode($array, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
