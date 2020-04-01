@@ -5,8 +5,8 @@ header('Content-type: application/json; charset=utf-8');
 include(explode('public_html', $_SERVER['DOCUMENT_ROOT'])[0] . 'config/config.php');
 
 $github = array(
-"MinterCat/MinterCat.com" => "v0.1.0",
-"MinterCat/API" => "v0.1.0",
+"MinterCat/MinterCat.com" => "v0.1.1",
+"MinterCat/API" => "v0.1.1",
 "MinterTeam/minter-go-node" => "v1.1.5",
 "MinterTeam/minter-php-sdk" => "v2.3.0"
 );

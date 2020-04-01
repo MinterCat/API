@@ -108,7 +108,8 @@ use
 <b>api.mintercat.com/coin</b><br>
 MINTERCAT coin price relative to BIP https://api.mintercat.com/coin<br>
 <ul>
-<li>estimate - the price of a coin in BIP.</li>
+<li>estimateCoinSell - estimate of sell MINTERCAT coin transaction.</li>
+<li>estimateCoinBuy - estimate of buy MINTERCAT coin transaction.</li>
 <li>symbol - characteristics of the MINTERCAT coin in relation to BIP.</li>
 <ul>
 <li>name - name of the MINTERCAT coin</li>
