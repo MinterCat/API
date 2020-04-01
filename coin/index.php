@@ -10,12 +10,15 @@ include(explode('public_html', $_SERVER['DOCUMENT_ROOT'])[0] . 'public_html/func
 $api = new MinterAPI($api3);
 
 $estimateCoinSell = $api->estimateCoinSell('MINTERCAT', '1000000000000000000', 'BIP', null);
-$estimate = $estimateCoinSell->result->will_get/10 ** 18;
+$estimateSell = $estimateCoinSell->result->will_get/10 ** 18;
+
+$estimateCoinBuy = $api->estimateCoinSell('BIP', '1000000000000000000', 'MINTERCAT', null);
+$estimateBuy = $estimateCoinSell->result->will_get/10 ** 18;
 
 $getCoinInfo = $api->getCoinInfo('MINTERCAT')->result;
 
 header('Access-Control-Allow-Origin: *');
 header('Content-type: application/json; charset=utf-8');
 
-$array = array("estimate" => $estimate, "symbol" => $getCoinInfo);
+$array = array("estimateCoinSell" => $estimateSell, "estimateCoinBuy" => $estimateBuy, "symbol" => $getCoinInfo);
 echo json_encode($array, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
