@@ -2,7 +2,7 @@
 header('Access-Control-Allow-Origin: *');
 header('Content-type: application/json; charset=utf-8');
 
-include($_SERVER['DOCUMENT_ROOT'] . '/function.php');
+include(explode('public_html', $_SERVER['DOCUMENT_ROOT'])[0] . 'public_html/function.php');
 
 $db_users = new Users();
 $result = $db_users->query('SELECT * FROM "table"');

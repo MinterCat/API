@@ -3,7 +3,7 @@ header('Access-Control-Allow-Origin: *');
 header('Content-type: application/json; charset=utf-8');
 
 include(explode('public_html', $_SERVER['DOCUMENT_ROOT'])[0] . 'config/config.php');
-include($_SERVER['DOCUMENT_ROOT'] . '/function.php');
+include(explode('public_html', $_SERVER['DOCUMENT_ROOT'])[0] . 'public_html/function.php');
 
 $json_api = JSON($coin_api);
 $estimate = $json_api->result->will_get/10 ** 18;

@@ -4,7 +4,7 @@ header('Content-type: application/json; charset=utf-8');
 
 $part = 4; //сколько всего партий способных выпадать при покупке
 
-include($_SERVER['DOCUMENT_ROOT'] . '/function.php');
+include(explode('public_html', $_SERVER['DOCUMENT_ROOT'])[0] . 'public_html/function.php');
 
 $db_api = new db_api();
 $db_cats = new Cats();
