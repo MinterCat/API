@@ -7,7 +7,7 @@ use Minter\SDK\MinterCoins\MinterMultiSendTx;
 
 function getBlockByHash ($hash)
 {
-    include('../../../config/config.php');
+    include(explode('public_html', $_SERVER['DOCUMENT_ROOT'])[0] . 'config/config.php');
 	$api = new MinterAPI($api2);
     return $api->getTransaction($hash);
 }

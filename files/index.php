@@ -1,12 +1,8 @@
 <?php
 header('Access-Control-Allow-Origin: *');
 header('Content-type: application/json; charset=utf-8');
-include('../../../config/config.php'); 
-//https://api.github.com/repos/MinterCat/MinterCat.com/contents/
-//https://api.github.com/repos/MinterCat/MinterCat.com/git/trees/c7a98d85e78a02cba8e477160e95bbdac60c6c2d
-//https://api.github.com/repos/MinterCat/MinterCat.com/git/commits/d91df7f125ecc57e3ff3cb7e01c4722a62587c7b
-//https://api.github.com/repos/MinterCat/MinterCat.com/events
-//https://api.github.com/repos/MinterCat/MinterCat.com/branches/master
+include(explode('public_html', $_SERVER['DOCUMENT_ROOT'])[0] . 'config/config.php');
+
 $trees = $_GET['trees'];
 $commits = $_GET['commits'];
 

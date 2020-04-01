@@ -2,7 +2,7 @@
 header('Access-Control-Allow-Origin: *');
 header('Content-type: application/json; charset=utf-8');
 
-include('../../../config/config.php');
+include(explode('public_html', $_SERVER['DOCUMENT_ROOT'])[0] . 'config/config.php');
 
 $github = array(
 "MinterCat/MinterCat.com" => "v0.1.0",

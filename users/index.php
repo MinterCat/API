@@ -2,13 +2,7 @@
 header('Access-Control-Allow-Origin: *');
 header('Content-type: application/json; charset=utf-8');
 
-class Users extends SQLite3
-{
-    function __construct()
-    {
-        $this->open('../../../config/users.sqlite');
-    }
-}
+include($_SERVER['DOCUMENT_ROOT'] . '/function.php');
 
 $db_users = new Users();
 $result = $db_users->query('SELECT * FROM "table"');

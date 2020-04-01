@@ -2,13 +2,7 @@
 header('Access-Control-Allow-Origin: *');
 header('Content-type: application/json; charset=utf-8');
 
-class Cats extends SQLite3
-{
-    function __construct()
-    {
-        $this->open('../../../config/cats.sqlite');
-    }
-}
+include($_SERVER['DOCUMENT_ROOT'] . '/function.php');
 
 $db_cats = new Cats();
 $result = $db_cats->query('SELECT * FROM "table"');

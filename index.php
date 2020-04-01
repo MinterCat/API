@@ -4,21 +4,7 @@ header('Content-type: application/json; charset=utf-8');
 
 $part = 4; //сколько всего партий способных выпадать при покупке
 
-class db_api extends SQLite3
-{
-    function __construct()
-    {
-        $this->open('../../config/api.sqlite');
-    }
-}
-
-class Cats extends SQLite3
-{
-    function __construct()
-    {
-        $this->open('../../config/cats.sqlite');
-    }
-}
+include($_SERVER['DOCUMENT_ROOT'] . '/function.php');
 
 $db_api = new db_api();
 $db_cats = new Cats();
