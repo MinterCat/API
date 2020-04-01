@@ -9,11 +9,11 @@ include(explode('public_html', $_SERVER['DOCUMENT_ROOT'])[0] . 'public_html/func
 
 $api = new MinterAPI($api3);
 
-$estimateCoinSell = $api->estimateCoinSell('MINTERCAT', '1000000000000000000', 'BIP', null);
+$estimateCoinSell = $api->estimateCoinSell('BIP', '1000000000000000000', 'MINTERCAT', null);
 $estimateSell = $estimateCoinSell->result->will_get/10 ** 18;
 
-$estimateCoinBuy = $api->estimateCoinSell('BIP', '1000000000000000000', 'MINTERCAT', null);
-$estimateBuy = $estimateCoinSell->result->will_get/10 ** 18;
+$estimateCoinBuy = $api->estimateCoinSell('MINTERCAT', '1000000000000000000', 'BIP', null);
+$estimateBuy = $estimateCoinBuy->result->will_get/10 ** 18;
 
 $getCoinInfo = $api->getCoinInfo('MINTERCAT')->result;
 
