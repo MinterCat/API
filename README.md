@@ -32,7 +32,7 @@ https://api.mintercat.com - API where you can get all existing types of cats, an
 <li>img - serial number of the cat's avatar.</li>
 To get an image of the cat's avatar, follow the link - mintercat.com/img/Cat <b><i>serial number of the cat's avatar</i></b> .webp
 <li>count - The number of cats of this breed at the moment.</li>
-<li>price - the recommended cost of this cat in the MINTERCAT coin.</li>
+<li>value - the recommended cost of this cat in the MINTERCAT coin.</li>
 </ul>
 
 ## Data base
@@ -83,10 +83,18 @@ Find out which user the cat belongs to, you can follow the link https://api.mint
 <li>stored_id - the block where the cat was created.</li>
 <li>addr - owner of the cat at the moment.</li>
 <li>id - serial number of the cat.</li>
-<li>img - serial number of the cat's avatar.</li>
-To get an image of the cat's avatar, follow the link - mintercat.com/img/Cat <b><i>serial number of the cat's avatar</i></b> .webp
-<li>sale - if 1 - for sale; if 0 - not for sale.</li>
+<li>img - serial number of the cat's avatar.<br>
+To get an image of the cat's avatar, follow the link -
+https://mintercat.com/img/Cat <b><i>serial number of the cat's avatar</i></b> .webp
+</li>
+<li>sale - if <b><i>1</i></b> - for sale; if <b><i>0</i></b> - not for sale.</li>
 <li>price - the sale Price of the cats in the MINTERCAT coin.</li>
+<li>gender - gender of the cat.</li>
+<li>name - the Name of the breed.</li>
+<li>series - release Series. The lower the series, the more expensive the cat.</li>
+<li>rarity - Rarity. On how many rarely marks a particular cat. Multiply this result by 100 and get the value as a percentage.</li>
+<li>count - The number of cats of this breed at the moment.</li>
+<li>value - the recommended cost of this cat in the MINTERCAT coin.</li>
 </ul>
 
 # IMG
