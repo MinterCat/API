@@ -6,7 +6,7 @@ include(explode('public_html', $_SERVER['DOCUMENT_ROOT'])[0] . 'config/config.ph
 
 $github = array(
 "MinterCat/MinterCat.com" => "v0.1.1",
-"MinterCat/API" => "v0.1.1",
+"MinterCat/API" => "v0.1.2",
 "MinterTeam/minter-go-node" => "v1.1.5",
 "MinterTeam/minter-php-sdk" => "v2.3.0"
 );
