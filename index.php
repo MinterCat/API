@@ -109,7 +109,7 @@ for ($i = 0; $i <= $countapi; $i++)
 			"rarity" => number_format($qq4,5),
 			"img" => $img,
 			"count" => $qq2,
-			"price" => (int)$prrice
+			"value" => (int)$prrice
 		);
 		$array[] = $array2;
 }
