@@ -16,6 +16,7 @@ This document covers the installation and use of this API and often reveals answ
 * [Coin price](#coin-price)
 * [Users](#users)
 * [Hash](#hash)
+* [Language](#language)
 * [GitHub Files](#github-files)
 * [Version](#version)
 
@@ -174,6 +175,10 @@ Types "mom" and "dad" may appear in the crossing transaction
 <li>mom - Mom's hash transactions.</li>
 <li>dad - Dad's hash transactions.</li>
 </ul>
+
+## Language
+<b>api.mintercat.com/language</b><br>
+Translate the MinterCat project into the selected language https://api.mintercat.com/language?lang=Russian<br>
 
 ## GitHub Files
 <b>api.mintercat.com/files</b><br>
