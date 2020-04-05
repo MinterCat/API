@@ -11,10 +11,10 @@ function getBlockByHash ($hash)
 	$api = new MinterAPI($api2);
     return $api->getTransaction($hash);
 }
-
+/*
 $hash = $_GET['hash'];
 $img = $_GET['img'];
-
+*/
 header('Access-Control-Allow-Origin: *');
 header('Content-type: application/json; charset=utf-8');
 

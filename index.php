@@ -7,7 +7,7 @@ $part = 4; //сколько всего партий способных выпа�
 include(explode('public_html', $_SERVER['DOCUMENT_ROOT'])[0] . 'public_html/function.php');
 
 $db_api = new db_api();
-$db_cats = new Cats();
+$db_cats = new dbCats();
 
 $sl = 3; //не менять!!!
 for ($i = 3; $i <= $part; $i++)

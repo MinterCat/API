@@ -4,7 +4,7 @@ header('Content-type: application/json; charset=utf-8');
 
 include(explode('public_html', $_SERVER['DOCUMENT_ROOT'])[0] . 'public_html/function.php');
 
-$db_cats = new Cats();
+$db_cats = new dbCats();
 $result = $db_cats->query('
 SELECT "table".*, "gen".*
 FROM "table" INNER JOIN "gen"

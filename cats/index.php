@@ -4,7 +4,7 @@ header('Content-type: application/json; charset=utf-8');
 
 include(explode('public_html', $_SERVER['DOCUMENT_ROOT'])[0] . 'public_html/function.php');
 
-$db_cats = new Cats();
+$db_cats = new dbCats();
 
 if (isset($_GET['addr']))
 	{
@@ -27,7 +27,5 @@ if (isset($_GET['id']))
 				if ($cat == $img) {$cat = $cats;break;}
 			}
 			$data = array_merge($db, $cat);
-			
-		
 	}
 echo json_encode($data, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
