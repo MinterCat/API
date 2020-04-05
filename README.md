@@ -34,6 +34,7 @@ https://api.mintercat.com - API where you can get all existing types of cats, an
 To get an image of the cat's avatar, follow the link - mintercat.com/img/Cat <b><i>serial number of the cat's avatar</i></b> .webp
 <li>count - The number of cats of this breed at the moment.</li>
 <li>value - the recommended cost of this cat in the MINTERCAT coin.</li>
+<li>color - the recommended background color of a cat.</li>
 </ul>
 
 ## Data base

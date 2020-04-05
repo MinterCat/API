@@ -102,6 +102,16 @@ for ($i = 0; $i <= $countapi; $i++)
 				$qq2 = 0;
 				break;}
 		}
+		switch ($series)
+		{
+			case 0: {$color = '#C1B5FF'; break;}
+			case 1: {$color = '#FFF6B5'; break;}
+			case 2: {$color = '#FFB5B5'; break;}
+			case 3: {$color = '#C7F66F'; break;}
+			case 4: {$color = '#FFC873'; break;}
+			case 5: {$color = '#6AF2D7'; break;}
+			case 999: {$color = '#9BF5DA'; break;}
+		}
 		$array2 = array(
 			"gender" => $gender,
 			"name" => $name,
@@ -109,6 +119,7 @@ for ($i = 0; $i <= $countapi; $i++)
 			"rarity" => number_format($qq4,5),
 			"img" => $img,
 			"count" => $qq2,
+			"color" => $color,
 			"value" => (int)$prrice
 		);
 		$array[] = $array2;
