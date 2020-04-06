@@ -179,7 +179,9 @@ Types "mom" and "dad" may appear in the crossing transaction
 
 ## Language
 <b>api.mintercat.com/language</b><br>
-Translate the MinterCat project into the selected language https://api.mintercat.com/language?lang=Russian<br>
+Translate the MinterCat project into the selected language https://api.mintercat.com/language?lang=Russian<br><br>
+
+The number of users who selected a specific localization language https://api.mintercat.com/language<br>
 
 ## GitHub Files
 <b>api.mintercat.com/files</b><br>
