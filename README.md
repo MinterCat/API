@@ -88,7 +88,7 @@ Find out which user the cat belongs to, you can follow the link https://api.mint
 <li>id - serial number of the cat.</li>
 <li>img - serial number of the cat's avatar.<br>
 To get an image of the cat's avatar, follow the link -
-https://mintercat.com/img/Cat <b><i>serial number of the cat's avatar</i></b> .webp
+https://mintercat.com/static/img/Cat <b><i>serial number of the cat's avatar</i></b> .webp
 </li>
 <li>sale - if <b><i>1</i></b> - for sale; if <b><i>0</i></b> - not for sale.</li>
 <li>price - the sale Price of the cats in the MINTERCAT coin.</li>
@@ -108,11 +108,11 @@ To get an image of the cat's avatar, follow the link - mintercat.com/img/Cat <b>
 Format .webp is supported by all browsers except Apple's Safari. For those who need png format, we have written a small utility, converting webp to png on the fly. Just instead<br>
 
 ```html
-<img src="https://mintercat.com/img/Cat5.webp" width="350" height="350">
+<img src="https://mintercat.com/static/img/Cat5.webp" width="350" height="350">
 ```
 use
 ```html
-<img src="https://mistercat.com/png.php?png=5" width="350" height="350">
+<img src="https://mintercat.com/png.php?png=5" width="350" height="350">
 ```
 
 ## Coin price

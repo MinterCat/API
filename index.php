@@ -118,6 +118,8 @@ for ($i = 0; $i <= $countapi; $i++)
 			"series" => $series,
 			"rarity" => number_format($qq4,5),
 			"img" => $img,
+			"webp" => 'https://mintercat.com/static/img/Cat' . $img . '.webp',
+			"png" => 'https://mintercat.com/png.php?png=' . $img,
 			"count" => $qq2,
 			"color" => $color,
 			"value" => (int)$prrice
