@@ -33,6 +33,8 @@ https://api.mintercat.com - API where you can get all existing types of cats, an
 <li>rarity - Rarity. On how many rarely marks a particular cat. Multiply this result by 100 and get the value as a percentage.</li>
 <li>img - serial number of the cat's avatar.</li>
 To get an image of the cat's avatar, follow the link - mintercat.com/img/Cat <b><i>serial number of the cat's avatar</i></b> .webp
+<li>webp - To get an image of the cat's avatarin webp format, follow the link.</li>
+<li>png - To get an image of the cat's avatarin png format, follow the link.</li>
 <li>count - The number of cats of this breed at the moment.</li>
 <li>value - the recommended cost of this cat in the MINTERCAT coin.</li>
 <li>color - the recommended background color of a cat.</li>
@@ -103,7 +105,7 @@ https://mintercat.com/static/img/Cat <b><i>serial number of the cat's avatar</i>
 # IMG
 All images in the project are used in the format .webp<br>
 <br>
-To get an image of the cat's avatar, follow the link - mintercat.com/img/Cat <b><i>serial number of the cat's avatar</i></b> .webp<br>
+To get an image of the cat's avatar, follow the link - mintercat.com/static/img/Cat <b><i>serial number of the cat's avatar</i></b> .webp<br>
 <br>
 Format .webp is supported by all browsers except Apple's Safari. For those who need png format, we have written a small utility, converting webp to png on the fly. Just instead<br>
 
