@@ -16,6 +16,7 @@ This document covers the installation and use of this API and often reveals answ
 * [Coin price](#coin-price)
 * [Users](#users)
 * [Hash](#hash)
+* [Shop](#shop)
 * [Language](#language)
 * [GitHub Files](#github-files)
 * [Version](#version)
@@ -175,6 +176,23 @@ Here we see the transaction type and appearance of the cat.<br>
 Types "mom" and "dad" may appear in the crossing transaction
 <li>mom - Mom's hash transactions.</li>
 <li>dad - Dad's hash transactions.</li>
+</ul>
+
+## Shop
+<b>api.mintercat.com/shop</b><br>
+API for interacting with the store https://api.mintercat.com/shop<br><br>
+
+<ul>
+<li>count - The number of cats currently being sold.</li>
+</ul>
+
+## Users
+<b>api.mintercat.com/users</b><br>
+Information about registered users https://api.mintercat.com/users<br>
+<ul>
+<li>address - address of the user's crypto wallet.</li>
+<li>nick - nickname in the game.</li>
+<li>language - user language.</li>
 </ul>
 
 ## Language
