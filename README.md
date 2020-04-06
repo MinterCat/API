@@ -64,10 +64,6 @@ All genes of cats, which can be obtained from the link https://api.mintercat.com
   And so on.
 </ul>
 
-## Genes and Data base
-<b>api.mintercat.com/gen/full</b><br>
-The full database with the addition of cat genes can be obtained from this link https://api.mintercat.com/gen/full<br>
-
 ## Explorer | Search by address
 <b>api.mintercat.com/cats?addr=Mx...</b><br>
 All cats belonging to the same user, you can get it from the link https://api.mintercat.com/cats?addr=Mx...<br>
