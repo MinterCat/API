@@ -116,7 +116,7 @@ for ($i = 0; $i <= $countapi; $i++)
 			"gender" => $gender,
 			"name" => $name,
 			"series" => $series,
-			"rarity" => number_format($qq4,5),
+			"rarity" => number_format($qq4,5, '.', ''),
 			"img" => $img,
 			"webp" => 'https://mintercat.com/static/img/Cat' . $img . '.webp',
 			"png" => 'https://mintercat.com/png.php?png=' . $img,
