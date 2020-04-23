@@ -12,7 +12,6 @@ This document covers the installation and use of this API and often reveals answ
 * [Genes](#genes)
 * [Explorer | Search by address](#explorer--search-by-address)
 * [Explorer | Search by id](#explorer--search-by-id)
-* [IMG](#img)
 * [Coin price](#coin-price)
 * [Users](#users)
 * [Hash](#hash)
@@ -97,21 +96,6 @@ https://mintercat.com/static/img/Cat <b><i>serial number of the cat's avatar</i>
 <li>count - The number of cats of this breed at the moment.</li>
 <li>value - the recommended cost of this cat in the MINTERCAT coin.</li>
 </ul>
-
-# IMG
-All images in the project are used in the format .webp<br>
-<br>
-To get an image of the cat's avatar, follow the link - mintercat.com/static/img/Cat <b><i>serial number of the cat's avatar</i></b> .webp<br>
-<br>
-Format .webp is supported by all browsers except Apple's Safari. For those who need png format, we have written a small utility, converting webp to png on the fly. Just instead<br>
-
-```html
-<img src="https://mintercat.com/static/img/Cat5.webp" width="350" height="350">
-```
-use
-```html
-<img src="https://mintercat.com/png.php?png=5" width="350" height="350">
-```
 
 ## Coin price
 <b>api.mintercat.com/coin</b><br>
