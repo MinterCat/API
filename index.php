@@ -27,7 +27,7 @@ if ($img0 == '')
 	}
 else
 	{
-		$result = $db_api->query('SELECT * FROM "table" WHERE img=' . $img0);
+		$result = $db_api->query('SELECT * FROM "table" WHERE img='.$img0);
 	}
 $payloadapi = array();
 while ($res = $result->fetchArray(1)){array_push($payloadapi, $res);}
@@ -50,6 +50,7 @@ for ($i = 0; $i <= $countapi; $i++)
 		$rnd = $payloadapi[$i]['rnd']; //Количество однотипных котов (разного цвета)
 		$name = $payloadapi[$i]['name']; //Имя
 		$gender = $payloadapi[$i]['gender']; //1-мальчик, 0 - девочка
+		$point = $payloadapi[$i]['point']; //Очки прокачки уровня аккаунта
 		//=====================================
 		$q1 = $series/$sl; //шанс выпадения кота в определенной серии
 		switch ($gender) {
@@ -122,7 +123,8 @@ for ($i = 0; $i <= $countapi; $i++)
 			"png" => 'https://mintercat.com/png.php?png=' . $img,
 			"count" => $qq2,
 			"color" => $color,
-			"value" => (int)$prrice
+			"value" => (int)$prrice,
+			"point" => (int)$point
 		);
 		$array[] = $array2;
 }
